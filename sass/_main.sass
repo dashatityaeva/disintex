@@ -1,0 +1,193 @@
+.logo
+ margin-bottom: 23px
+.title
+ +InterBold
+ position: relative
+ width: 644px
+ font-size: 56px
+ line-height: 68px
+ text-transform: uppercase
+ color: #118976
+ text-shadow: 2px 2px 0px #FFFFFF
+ margin-bottom: 62px
+.advantages
+ margin-bottom: 80px
+ position: relative
+ &__advantage
+  display: flex
+  align-items: center
+  margin-bottom: 49px
+.advantage
+ &__icon
+  width: 54px
+  height: 50px 
+  margin-right:  25px
+ &__title
+  width: 277px
+  font-size: 20px
+  line-height: 28px
+  font-weight: bold
+  align-items: center
+  color: #333333
+.medicine
+ position: absolute
+ width: 176px
+ height: 388px
+ left: 479px
+ top: -100px 
+ background: url("../img/medicine.png") no-repeat
+.column
+  &__right
+    padding-top: 111px
+.form
+ &__wrap
+  text-align: center
+  background: #FFFFFF
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  border-radius: 2px
+  width: 368px
+  height: 553px
+ &__title
+  +InterBold
+  font-size: 28px
+  line-height: 32px
+  letter-spacing: -0.01em
+  color: #333333
+  padding-top: 24px
+  padding-bottom: 12px
+ &__info
+  display: flex
+  flex-direction: column
+ &__subtitle
+  +InterBold
+  font-weight: bold
+  font-size: 22px
+  line-height: 110%
+  letter-spacing: -0.01em
+  color: #FF2C2C
+  margin-bottom: 4px
+ &__price
+  +InterBold
+  font-size: 38px
+  line-height: 42px
+  color: #FF2C2C 
+  margin-bottom: 88px
+ &__data
+  display: flex
+  flex-direction: column
+ &__remark
+  font-size: 12px
+  line-height: 20px
+  color: #828282
+ &__select
+  position: relative 
+  &:after
+    content: ''
+    display: inline-flex
+    background:  url("../img/select.svg") no-repeat
+    width: 13px
+    height: 7px
+    position: absolute
+    top: 19px
+    right:  70px
+    //z-index: 0
+  select
+    cursor: pointer
+    background: transparent   
+    appearance: none
+    padding-right: 30px
+
+
+ &__input
+  cursor: pointer
+  border: 1px solid #089C84
+  box-sizing: border-box
+  border-radius: 2px
+  width: 254px
+  height: 42px
+  font-size: 14px
+  align-items: center
+  color: #333333
+  padding: 0 19px
+  margin-bottom: 12px
+  align-self: center
+  &:nth-last-child(2)
+   margin-bottom: 21px
+ &__btn
+  border: none
+  background: #FF272B
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.25)
+  border-radius: 50px
+  width: 254px
+  height: 56px
+  align-self: center
+  font-weight: bold
+  font-size: 18px
+  line-height: 100%
+  text-align: center
+  text-transform: uppercase
+  color: #FFFFFF
+  margin-bottom: 16px
+  cursor: pointer
+  &:hover
+    width: 270px
+    background: #c90407
+
+
+@media ( max-width: 1199px)
+  .container
+    max-width: 991px
+  .wrap
+    max-width:  800px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+  .column
+    &__right
+      padding-top: 0  
+      padding-bottom: 100px
+
+@media ( max-width: 480px)
+  body
+    background-position: 77% 0%
+  .container
+    max-width: 480px
+  .wrap
+    max-width:  320px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+  .logo
+    margin-top: 24px
+    flex-wrap: wrap  
+  .title
+    width: 255px
+    font-size: 32px
+    line-height: 40px
+    text-align: center
+    text-shadow: 2px 2px 0px #FFFFFF
+  .column
+    &__left 
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 74px 
+      justify-content: center
+  .advantages
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-bottom: 20px
+    &__advantage
+      margin-bottom: 20px 
+  .advantage    
+    &__title
+      width: 170px  
+      font-size: 18px
+      line-height: 24px
+  .medicine
+    position: static
+ 
+      
+
+
+
